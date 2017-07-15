@@ -27,3 +27,23 @@
         color: #fefefe;
         font-size: 17px;
     }
+
+.borda-anuncio {
+    border: 1.5px solid RGBA(0,0,0,.5);
+    border-radius: 5px;
+}
+
+#container {
+    background-color: white;
+}
+
+.btn {
+    margin-top: 6px;
+    background-color: #2E2F45 !important;
+    color: white;
+    font-size: 18pt;
+}
+
+.btn:hover {
+    color:#eee;
+}

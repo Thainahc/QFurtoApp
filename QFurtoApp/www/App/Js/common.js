@@ -1,19 +1,10 @@
 ﻿function onLoad() {
-    parseToCurrency();
     parseToDecimal();
     parseToDecimalThree();
     parseToPercent();
 
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
-    });
-}
-
-function parseToCurrency() {
-    $(".currency").priceFormat({
-        prefix: "R$ ",
-        centsSeparator: ",",
-        thousandsSeparator: "."
     });
 }
 

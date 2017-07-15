@@ -61,9 +61,14 @@
     html += '           <input type="text" class="form-control" id="Telefone">';
     html += '       </div>';
     html += '   </div>';
-    html += '   <div class="col-xs-12">';
+    html += '   <div class="col-xs-6">';
     html += '       <div class="form-group">';
     html += '           <button class="btn btn-primary" onclick="SalvarAnuncio();">Salvar</button>';
+    html += '       </div>';
+    html += '   </div>';
+    html += '   <div class="col-xs-6">';
+    html += '       <div class="form-group">';
+    html += '           <button class="btn btn-primary pull-right" onclick="carregaPrincipal();">Voltar</button>';
     html += '       </div>';
     html += '   </div>';
     html += '</div>';
@@ -89,7 +94,7 @@ function SalvarAnuncio() {
             alert(retorno.Message, retorno.Type);
         },
         error: function (retorno) {
-            exibeMensagem(JSON.parse(retorno.responseText).Message, "Error");
+            alert(JSON.parse(retorno.responseText).Message, "Error");
         }
     })
 }
