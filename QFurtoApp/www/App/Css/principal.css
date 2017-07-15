@@ -1,0 +1,29 @@
+﻿.navbar {
+    position: fixed;
+    width: 100%;
+    border-radius: 0 0;
+}
+
+.navbar-default {
+    background-color: #2E2F45 !important;
+    border: none !important;
+}
+
+    .navbar-default .navbar-toggle {
+        border: none;
+    }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #fefefe;
+        }
+
+    .navbar-default > .container-fluid > .navbar-header > div > span {
+        color: #fefefe;
+        font-size: 20px;
+    }
+
+    .navbar-default > div > .container-fluid > .navbar-header > div > span {
+        color: #fefefe;
+        font-size: 17px;
+    }
+}

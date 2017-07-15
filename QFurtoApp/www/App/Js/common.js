@@ -3,6 +3,10 @@
     parseToDecimal();
     parseToDecimalThree();
     parseToPercent();
+
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
 }
 
 function parseToCurrency() {
