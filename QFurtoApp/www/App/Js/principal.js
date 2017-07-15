@@ -145,6 +145,7 @@ function montaViewDetalhesAnuncio(selecionado) {
     html += '               <option value="3">Coronel Luciano</option>';
     html += '               <option value="4">Americo Silva</option>';
     html += '               <option value="5">Gomes</option>';
+    html += '               <option value="6">Buritis</option>';
     html += '           </select>';
     html += '       </div>'
     html += '   </div>'
