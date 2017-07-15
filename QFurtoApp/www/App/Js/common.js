@@ -35,7 +35,8 @@ function parseToPercent() {
 }
 
 function WS_QFurto() {
-    var servidor = "http://localhost:2284";
+    //var servidor = "http://localhost:2284";
+    var servidor = "http://192.168.0.175:9090";
     return servidor;
 }
 
