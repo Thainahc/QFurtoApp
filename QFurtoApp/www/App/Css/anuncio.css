@@ -1,0 +1,12 @@
+﻿.form-control#Modelo {
+    width: 110px;
+}
+
+.form-control#Placa {
+    width: 110px;
+}
+
+.input-validation-error {
+    background-color: #ffe5e5 !important;
+    border: 1px solid #ff9999 !important;
+}

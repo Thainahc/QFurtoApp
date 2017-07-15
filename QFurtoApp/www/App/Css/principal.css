@@ -27,37 +27,3 @@
         color: #fefefe;
         font-size: 17px;
     }
-
-.main {
-    background-color: #ecf0f5;
-    min-height: calc(100vh -52px); /*100% do tamanho da tela - o tamanho do topo*/
-    overflow: hidden;
-}
-
-.menu {
-    width: 0px;
-    border-top: 1px solid #333;
-    background-color: #222;
-    overflow: hidden; /* não deixa a lista transbordar para fora do menu*/
-    transition: width .5s;
-}
-
-    .menu.menu-open {
-        width: 300px;
-    }
-
-    .menu ul {
-        list-style: none;
-        padding: 10px 0;
-    }
-
-        .menu ul li a {
-            display: block;
-            color: #9d9d9d;
-            padding: 10px 15px;
-            white-space: nowrap; /*evitar que as palavras se quebrem*/
-        }
-
-        .menu ul li:hover a, .menu ul li.active a {
-            color: white;
-        }

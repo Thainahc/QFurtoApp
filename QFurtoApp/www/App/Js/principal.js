@@ -9,12 +9,12 @@ function loadPrincipal(){
 function montaViewPrincipal() {
     var html = '';
 
-    html += '<div id="mdl-layout__obfuscator" class="mdl-layout__obfuscator" onclick="showSidebar(event);"></div>';
+    html += '<div id="mdl-layout__obfuscator" class="mdl-layout__obfuscator" onclick="NovoAnuncio();"></div>';
 
     html += '<nav class="navbar navbar-default">';
     html += '   <div class="container-fluid">';
     html += '       <div class="navbar-header">';
-    html += '            <button type="button" id="btnSidebar" class="navbar-toggle pull-left" onclick="showSidebar(event);">';
+    html += '            <button type="button" id="btnSidebar" class="navbar-toggle pull-left" onclick="NovoAnuncio();">';
     html += '               <span class="icon-bar"></span>';
     html += '               <span class="icon-bar"></span>';
     html += '               <span class="icon-bar"></span>';
@@ -22,15 +22,6 @@ function montaViewPrincipal() {
     html += '       </div>';
     html += '   </div>';
     html += '</nav>';
-
-    html += '<div class="main">';
-    html += '    <div class="menu">';
-    html += '        <ul>';
-    html += '            <li><a href="#">Anuncie</a></li>';
-    html += '            <li><a href="#">Meus anúncios</a></li>';
-    html += '        </ul>';
-    html += '    </div>';
-    html += '</div>';
 
     html += '<div id="principal" class="container-fluid">';
     html += '</div>';

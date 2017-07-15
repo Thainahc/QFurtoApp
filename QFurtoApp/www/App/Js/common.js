@@ -42,3 +42,31 @@ function parseToPercent() {
         thousandsSeparator: "."
     });
 }
+
+function WS_QFurto() {
+    var servidor = "http://localhost:2284";
+    return servidor;
+}
+
+function sinalizaCamposInvalidos(inputs) {
+    for (var i = 0; i < inputs.length; i++) {
+        var input = $("#" + inputs[i]);
+        if (input.hasClass("selectized")) {
+            var selectize = $("#" + input.attr("id") + "-selectized");
+            var content = selectize.closest(".selectize-input");
+            var select = input;
+            content.addClass("input-validation-error");
+            select.change(function () {
+                content.removeClass("input-validation-error");
+                select.off("change");
+            });
+        }
+        else {
+            input.addClass("input-validation-error");
+            input.change(function () {
+                $(this).removeClass("input-validation-error");
+                $(this).off("change");
+            });
+        }
+    }
+}
